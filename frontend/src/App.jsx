@@ -1,23 +1,23 @@
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Login from './routes/Login'
-import Register from './routes/Register'
-import Dashboard from './routes/Dashboard'
-import Error from './routes/Error'
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Register from "./routes/Register"
+import Dashboard from "./routes/Dashboard"
+import Login from "./routes/Login"
+import Error from "./routes/Error"
 
 function App() {
-
+  
 
   return (
-    <Router>
-      <Routes>
-        <Route path='/' element ={<Login/>}/>
-        <Route path='/register' element ={<Register/>}/>
-        <Route path='/dashboard' element ={<Dashboard/>}/>
-        <Route path='/error' element ={<Error/>}/>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Login/>}/>
+      <Route path="/register" element={<Register/>}/>
+      <Route path="/dashboard" element={<Dashboard/>}/>
+      <Route path="*" element={<Error/>}/>
 
-      </Routes>
-      
-    </Router>
+    </Routes>
+    
+    </BrowserRouter>
   )
 }
 
