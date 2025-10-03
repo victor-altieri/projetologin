@@ -1,1 +1,21 @@
-[]
+[
+    {
+      "nome": "Xbox Series X",
+      "preco": 4500
+    },
+    {
+      "nome": "PlayStation 5",
+      "preco": 5000
+   
+    },
+    {
+      "nome": "Nintendo Switch",
+      "preco": 2500
+    
+    },
+    {
+      "nome": "iPhone 17 Pro Max",
+      "preco": 9999
+
+    }
+]
